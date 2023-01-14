@@ -1,0 +1,30 @@
+<main>
+    <form method="POST" action="">
+
+        <label class="isRequired" for="nombreInput">Nombre</label>
+        <input type="text" id="nombreInput" required placeholder="Escribre tu nombre" appBorderColor [(ngModel)]="datos.nombre" name="name">
+    
+        <label class="isRequired" for="emailInput">Email</label>
+        <input type="email" id="emailInput" required placeholder="Escribe tu Email" appBorderColor [(ngModel)]="datos.email" name="email">
+    
+        <label for="telefonoInput">Telefono</label>
+        <input type="tel" id="telefonoInput" placeholder="Escribre tu telefono" appBorderColor [(ngModel)]="datos.telefono" name="telefono">
+    
+        <label for="webInput">Sitio web</label>
+        <input type="url" id="webInput" placeholder="Escribe la URL de tu web" appBorderColor [(ngModel)]="datos.web" name="web">
+    
+        <label class="isRequired" for="asuntoInput">Asunto</label>
+        <input type="text" id="asuntoInput" required placeholder="Escribe un asunto" appBorderColor [(ngModel)]="datos.asunto" name="asunto">
+    
+        <button (click)="validarDatos()">Validar datos</button>
+
+        <div id="datos" *ngIf="validate">
+            <p *ngIf="datos.nombre">Nombre : {{datos.nombre}}</p>
+            <p *ngIf="datos.email">Email : {{datos.email}}</p>
+            <p *ngIf="datos.telefono">Telefono : {{datos.telefono}}</p>
+            <p *ngIf="datos.web">Sitio web : {{datos.web}}</p>
+            <p *ngIf="datos.asunto">Asunto : {{datos.asunto}}</p>
+        </div>
+
+    </form>
+</main>

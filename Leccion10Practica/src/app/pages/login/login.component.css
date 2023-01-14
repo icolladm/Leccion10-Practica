@@ -1,0 +1,52 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top:50px;
+}
+form p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 20px 10px 20px;
+}
+
+form label{
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+form input{
+    display: block;
+    margin: 10px 5px 20px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button{
+    margin-left: 20px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color:var(--main-color);
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+form span{
+    font-size:12px ;
+}
+
+form span:nth-child(1){
+    color: var(--main-color);
+    margin-left: 20px;
+}

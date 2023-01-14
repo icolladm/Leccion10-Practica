@@ -1,0 +1,11 @@
+<main  class="games">
+
+    <article *ngFor="let game of gamesList" appClicGame>
+        <h4>{{game.name}}</h4>
+        <img src="{{game.background_image}}" alt="{{game.name}}">
+        <div>
+            <p>{{game.released}} / Metacritic: {{game.metacritic}}</p>
+        </div>
+    </article>
+
+<main></main>

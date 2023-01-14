@@ -1,0 +1,18 @@
+<main>
+    <form method="POST" action="">
+
+        <label for="emailInput">Email</label>
+        <input type="email" name="emailInput" id="emailInput" [(ngModel)]="datos.email">
+
+        <label for="passInput">Password</label>
+        <input type="password" name="passInput" id="passInput" [(ngModel)]="datos.password">
+
+        <button (click)="validate()">Log In</button>
+
+        <div id="datos" *ngIf="isValid">
+            <p *ngIf="datos.email">Email : {{datos.email}}</p>
+            <p *ngIf="datos.password">Password : {{datos.password}}</p>
+        </div>
+
+    </form>
+</main>
